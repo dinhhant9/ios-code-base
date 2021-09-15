@@ -14,6 +14,14 @@
 		9218453626F1B20A009FB1BB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9218453526F1B20A009FB1BB /* Assets.xcassets */; };
 		9218453926F1B20A009FB1BB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9218453726F1B20A009FB1BB /* LaunchScreen.storyboard */; };
 		9218454A26F1B396009FB1BB /* UnitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9218454926F1B396009FB1BB /* UnitTests.swift */; };
+		925AF3F326F1F94000381250 /* AppDelegate+Additionals.swift in Sources */ = {isa = PBXBuildFile; fileRef = 925AF3F226F1F94000381250 /* AppDelegate+Additionals.swift */; };
+		925AF3FC26F1FAF800381250 /* SplashScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 925AF3FB26F1FAF800381250 /* SplashScreenViewController.swift */; };
+		925AF40026F1FB5D00381250 /* SplashScreenInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 925AF3FF26F1FB5D00381250 /* SplashScreenInteractor.swift */; };
+		925AF40426F1FB9400381250 /* SplashScreenRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 925AF40326F1FB9400381250 /* SplashScreenRouter.swift */; };
+		925AF40826F1FC1500381250 /* SplashScreenPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 925AF40726F1FC1500381250 /* SplashScreenPresenter.swift */; };
+		925AF40C26F1FC6600381250 /* SplashScreenPresenter+Notifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = 925AF40B26F1FC6600381250 /* SplashScreenPresenter+Notifications.swift */; };
+		925AF41026F1FC8400381250 /* SplashScreenAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 925AF40F26F1FC8400381250 /* SplashScreenAssembly.swift */; };
+		925AF41426F1FCF800381250 /* SplashScreenViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 925AF41326F1FCF800381250 /* SplashScreenViewController.xib */; };
 		9A77AF97D1FE10D1EBA31AEE /* Pods_CodeBase_UnitTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52366848D52F82DE2DC6D4F1 /* Pods_CodeBase_UnitTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -42,6 +50,14 @@
 		9218454726F1B396009FB1BB /* UnitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UnitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9218454926F1B396009FB1BB /* UnitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnitTests.swift; sourceTree = "<group>"; };
 		9218454B26F1B396009FB1BB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		925AF3F226F1F94000381250 /* AppDelegate+Additionals.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AppDelegate+Additionals.swift"; sourceTree = "<group>"; };
+		925AF3FB26F1FAF800381250 /* SplashScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreenViewController.swift; sourceTree = "<group>"; };
+		925AF3FF26F1FB5D00381250 /* SplashScreenInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreenInteractor.swift; sourceTree = "<group>"; };
+		925AF40326F1FB9400381250 /* SplashScreenRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreenRouter.swift; sourceTree = "<group>"; };
+		925AF40726F1FC1500381250 /* SplashScreenPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreenPresenter.swift; sourceTree = "<group>"; };
+		925AF40B26F1FC6600381250 /* SplashScreenPresenter+Notifications.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SplashScreenPresenter+Notifications.swift"; sourceTree = "<group>"; };
+		925AF40F26F1FC8400381250 /* SplashScreenAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreenAssembly.swift; sourceTree = "<group>"; };
+		925AF41326F1FCF800381250 /* SplashScreenViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SplashScreenViewController.xib; sourceTree = "<group>"; };
 		98A4745BE10B4490EA26F45C /* Pods-CodeBase.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CodeBase.debug.xcconfig"; path = "Target Support Files/Pods-CodeBase/Pods-CodeBase.debug.xcconfig"; sourceTree = "<group>"; };
 		CEE9E137D331C200C6650EA6 /* Pods_CodeBase.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CodeBase.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -109,12 +125,10 @@
 		9218452B26F1B20A009FB1BB /* CodeBase */ = {
 			isa = PBXGroup;
 			children = (
-				9218452C26F1B20A009FB1BB /* AppDelegate.swift */,
+				925AF3F826F1FAD100381250 /* Modules */,
+				925AF3ED26F1F8CD00381250 /* Resources */,
+				925AF3EC26F1F8B200381250 /* Supporting Files */,
 				9218453026F1B20A009FB1BB /* ViewController.swift */,
-				9218453226F1B20A009FB1BB /* Main.storyboard */,
-				9218453526F1B20A009FB1BB /* Assets.xcassets */,
-				9218453726F1B20A009FB1BB /* LaunchScreen.storyboard */,
-				9218453A26F1B20A009FB1BB /* Info.plist */,
 			);
 			path = CodeBase;
 			sourceTree = "<group>";
@@ -126,6 +140,56 @@
 				9218454B26F1B396009FB1BB /* Info.plist */,
 			);
 			path = UnitTests;
+			sourceTree = "<group>";
+		};
+		925AF3EC26F1F8B200381250 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				9218452C26F1B20A009FB1BB /* AppDelegate.swift */,
+				925AF3F226F1F94000381250 /* AppDelegate+Additionals.swift */,
+				9218453226F1B20A009FB1BB /* Main.storyboard */,
+				9218453726F1B20A009FB1BB /* LaunchScreen.storyboard */,
+				9218453A26F1B20A009FB1BB /* Info.plist */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		925AF3ED26F1F8CD00381250 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				9218453526F1B20A009FB1BB /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		925AF3F826F1FAD100381250 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				925AF3F926F1FADF00381250 /* System */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		925AF3F926F1FADF00381250 /* System */ = {
+			isa = PBXGroup;
+			children = (
+				925AF3FA26F1FAE700381250 /* SplashScreen */,
+			);
+			path = System;
+			sourceTree = "<group>";
+		};
+		925AF3FA26F1FAE700381250 /* SplashScreen */ = {
+			isa = PBXGroup;
+			children = (
+				925AF3FB26F1FAF800381250 /* SplashScreenViewController.swift */,
+				925AF3FF26F1FB5D00381250 /* SplashScreenInteractor.swift */,
+				925AF40326F1FB9400381250 /* SplashScreenRouter.swift */,
+				925AF40726F1FC1500381250 /* SplashScreenPresenter.swift */,
+				925AF40B26F1FC6600381250 /* SplashScreenPresenter+Notifications.swift */,
+				925AF40F26F1FC8400381250 /* SplashScreenAssembly.swift */,
+				925AF41326F1FCF800381250 /* SplashScreenViewController.xib */,
+			);
+			path = SplashScreen;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -213,6 +277,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9218453926F1B20A009FB1BB /* LaunchScreen.storyboard in Resources */,
+				925AF41426F1FCF800381250 /* SplashScreenViewController.xib in Resources */,
 				9218453626F1B20A009FB1BB /* Assets.xcassets in Resources */,
 				9218453426F1B20A009FB1BB /* Main.storyboard in Resources */,
 			);
@@ -313,8 +378,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				925AF41026F1FC8400381250 /* SplashScreenAssembly.swift in Sources */,
 				9218453126F1B20A009FB1BB /* ViewController.swift in Sources */,
+				925AF40826F1FC1500381250 /* SplashScreenPresenter.swift in Sources */,
+				925AF40026F1FB5D00381250 /* SplashScreenInteractor.swift in Sources */,
 				9218452D26F1B20A009FB1BB /* AppDelegate.swift in Sources */,
+				925AF40C26F1FC6600381250 /* SplashScreenPresenter+Notifications.swift in Sources */,
+				925AF3FC26F1FAF800381250 /* SplashScreenViewController.swift in Sources */,
+				925AF3F326F1F94000381250 /* AppDelegate+Additionals.swift in Sources */,
+				925AF40426F1FB9400381250 /* SplashScreenRouter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -481,7 +553,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = 6Q36729AW4;
-				INFOPLIST_FILE = CodeBase/Info.plist;
+				INFOPLIST_FILE = "CodeBase/Supporting Files/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -504,7 +576,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = 6Q36729AW4;
-				INFOPLIST_FILE = CodeBase/Info.plist;
+				INFOPLIST_FILE = "CodeBase/Supporting Files/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
