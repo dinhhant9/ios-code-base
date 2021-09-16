@@ -3,7 +3,7 @@ platform :ios, '11.0'
 
 use_frameworks!
 
-# Pods for CodeBase target
+# Pods for CodeBase target_alo_alo
 target 'CodeBase' do
     pod 'Swinject'
     pod 'Bolts-Swift'
